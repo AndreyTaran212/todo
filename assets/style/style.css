@@ -1,0 +1,87 @@
+@import "reset.css";
+
+body {
+    background-color: gray;
+}
+
+
+
+
+.header {
+    box-sizing: border-box;
+    padding: 20px;
+    left: 50%;
+}
+
+.form {
+   display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+#taskInput{
+    flex-grow: 1;
+}
+
+
+.userTaskList {
+    left: 40%;
+    top: 90px;
+    background-color: aliceblue;
+
+}
+
+li {
+    margin: 10px;
+    box-sizing: border-box;
+    border: indigo 2px solid;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.todoApp{
+    background-color: white;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+----------------------------BUTTON
+*/
+
+
+.button{
+    box-sizing: border-box;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: white;
+    flex-basis: 80px;
+    flex-grow: 0.5;
+    max-width: 120px;
+}
+
+.addButton{
+    background-color: aquamarine;
+}
+
+
+.resetButton{
+    background-color: deeppink;
+}
+
+/*
+----------------------------------LIST
+*/
+
+#tasksList{
+    flex: 1;
+    overflow-y: auto;
+}
